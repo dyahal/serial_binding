@@ -7,7 +7,7 @@
 /* modem driver */
 #include "HL7692/HL7692-Driver.h"
 
-#define AFB_BINDING_VERSION 4
+#define AFB_BINDING_VERSION 3
 #include <afb/afb-binding.h>
 
 /*
