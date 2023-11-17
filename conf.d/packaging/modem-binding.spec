@@ -35,7 +35,7 @@ Source0: %{name}-%{version}.tar.gz
 
 Requires: afb-binder
 
-BuildRequires: mock
+#BuildRequires: mock
 BuildRequires: afm-rpm-macros
 BuildRequires: cmake
 BuildRequires: gcc gcc-c++
