@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
+#include "wrap-json.h"
 /* modem driver */
 #include "HL7692/HL7692-Driver.h"
 
