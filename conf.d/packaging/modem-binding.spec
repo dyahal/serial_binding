@@ -63,14 +63,14 @@ Provide API to communicate with Sierra Modem HL7692 through serial interface
 
 %install
 
-mkdir -p %{buildroot}%{_libexecdir}/redtest/%{name}/
-cp -a redtest/. %{buildroot}%{_libexecdir}/redtest/%{name}/
+#mkdir -p %{buildroot}%{_libexecdir}/redtest/%{name}/
+#cp -a redtest/. %{buildroot}%{_libexecdir}/redtest/%{name}/
 
 %afm_makeinstall
 
-%files
-/var/local/lib/afm/applications/%{name}/*
-/var/local/lib/afm/applications/libexec/redtest/%{name}/*
+#%files
+#/var/local/lib/afm/applications/%{name}/*
+#/var/local/lib/afm/applications/libexec/redtest/%{name}/*
 
 %check
 
