@@ -16,14 +16,14 @@
 
 # Temporary redefinition of afm_files_redtest
 # To delete when afm-rpm-macros will be updated in all stacks
-%define afm_files_redtest \
-%defattr(770,root,users) \
-%dir %{_libexecdir}/redtest/ \
-%dir %{_libexecdir}/redtest/%{name}/ \
-%dir %{afm_extra_files_test} \
-%{_libexecdir}/redtest/%{name}/* \
-%{afm_extra_files_test} \
-%{nil}
+# %define afm_files_redtest \
+# %defattr(770,root,users) \
+# %dir %{_libexecdir}/redtest/ \
+# %dir %{_libexecdir}/redtest/%{name}/ \
+# %dir %{afm_extra_files_test} \
+# %{_libexecdir}/redtest/%{name}/* \
+# %{afm_extra_files_test} \
+# %{nil}
 
 Name:    modem-binding
 Version: 1.0
