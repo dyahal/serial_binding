@@ -14,17 +14,6 @@
 # limitations under the License.
 ###########################################################################
 
-# Temporary redefinition of afm_files_redtest
-# To delete when afm-rpm-macros will be updated in all stacks
-# %define afm_files_redtest \
-# %defattr(770,root,users) \
-# %dir %{_libexecdir}/redtest/ \
-# %dir %{_libexecdir}/redtest/%{name}/ \
-# %dir %{afm_extra_files_test} \
-# %{_libexecdir}/redtest/%{name}/* \
-# %{afm_extra_files_test} \
-# %{nil}
-
 Name:    modem-binding
 Version: 1.0
 Release: 0%{?dist}
@@ -35,7 +24,6 @@ Source0: %{name}-%{version}.tar.gz
 
 Requires: afb-binder
 
-#BuildRequires: mock
 BuildRequires: afm-rpm-macros
 BuildRequires: cmake
 BuildRequires: gcc gcc-c++
@@ -62,15 +50,7 @@ Provide API to communicate with Sierra Modem HL7692 through serial interface
 %afm_build_cmake
 
 %install
-
-#mkdir -p %{buildroot}%{_libexecdir}/redtest/%{name}/
-#cp -a redtest/. %{buildroot}%{_libexecdir}/redtest/%{name}/
-
 %afm_makeinstall
-
-#%files
-#/var/local/lib/afm/applications/%{name}/*
-#/var/local/lib/afm/applications/libexec/redtest/%{name}/*
 
 %check
 
